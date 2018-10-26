@@ -40,4 +40,21 @@ h2 {
 
 }
 
+h3 {
+    width: 300px;
+    display: flex;
+    position: static;
+    justify-content: center;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-style: normal;
+    margin-left: 5px;
+    margin-top: 20px;
+
+}
+
 
