@@ -8,12 +8,24 @@ function myMap(){
 
     const mapProp = {
         center: myLocation,
-        zoom: 18,
+        zoom: 15,
         mapTypeId: google.maps.MapTypeId.HYBRID
+        //criamos aqui uma propriedade stules:[
     }
 
     //definir o mapa
     const map = new google.maps.Map(
         document.getElementById("googleMap"),
         mapProp)
+
+        //criar Marcador
+
+        var marker = new google.maps.Marker({
+            position:myLocation,
+            animation:google.maps.Animation.BOUNCE
+            });
+          
+          marker.setMap(map);
+
+          
 }

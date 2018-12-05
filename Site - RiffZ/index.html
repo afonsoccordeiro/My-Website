@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RiffZ</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
@@ -13,19 +13,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" href="assets/css/Article-Clean.css">
-    <link rel="stylesheet" href="assets/css/Article-List.css">
-    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
-    <link rel="stylesheet" href="assets/css/Features-Clean.css">
-    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="assets/css/Header-Blue.css">
-    <link rel="stylesheet" href="assets/css/Highlight-Blue.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
-    <link rel="stylesheet" href="assets/css/Map-Clean.css">
-    <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
-    <link rel="stylesheet" href="assets/css/Projects-Horizontal.css">
-    <link rel="stylesheet" href="assets/css/Social-Icons.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -160,13 +147,13 @@
                 <p class="text-center" style="color:rgb(255,255,255);">Get all the information you need about your favorite artists, new artists &amp; more!</p>
             </div>
             <form class="form-inline" method="post">
-                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email">
+                <div class="form-group"><input id="txtEmail" class="form-control" type="email" name="email" placeholder="Your Email">
                     <div></div>
                 </div>
-                <div class="form-group"><button class="btn btn-primary" type="submit">Subscribe </button></div>
+                <input class="btn btn-primary" type="button" value="SUBSCRIBE" onclick="sendEmail()">
             </form>
-            <div class="d-flex justify-content-center" style="margin-top:10px;color:rgb(55,58,61);"><a href="#" style="font-weight:normal;font-style:italic;font-size:14px;color:rgb(70,77,85);">I am already subscribed.</a></div>
         </div>
+        
     </div>
     <div class="map-clean" style="background-color:#0d0d0d;padding-top:0px;">
         <div class="container">
@@ -176,8 +163,9 @@
                     <p class="text-center"><span style="color:white;font-size:14px;font-weight:bold;">If you have any ideias for our website, new stuff or you want to work with us let us know.</span><br><br>Phone: 00351 22 334 331<br><br>Email: riffzmusic@gmail.com</p>
                 </div>
             </div>
-        </div><iframe allowfullscreen="" frameborder="0" width="100%" height="450" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaEw6o8OhJvRQnTF3gI_tibMejtfasOlY&amp;q=ESMAD&amp;zoom=15"></iframe></div>
-    <div class="footer-basic" style="background-color:#0d0d0d;">
+        </div><iframe allowfullscreen="" frameborder="0" width="100%" height="450" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyACuZJ6kdPGEa6Ofq1Xa0A6dhTqQbh1_Os&amp;q=ESMAD&amp;zoom=15&amp;maptype=satellite"></iframe></div>
+    <div class="footer-basic"
+        style="background-color:#0d0d0d;">
         <footer>
             <div class="social"><a href="#"><i class="icon ion-social-twitter" style="color:white;"></i></a><a href="#"><i class="icon ion-social-facebook" style="color:white;"></i></a><a href="#"><i class="icon ion-social-instagram" style="color:white;"></i></a><a href="#"><i class="icon ion-social-youtube" style="color:white;"></i></a></div>
             <ul
@@ -191,9 +179,11 @@
         </footer>
     </div>
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
