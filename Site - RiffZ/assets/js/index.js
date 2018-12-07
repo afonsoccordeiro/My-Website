@@ -15,7 +15,6 @@ function sendEmail() {
      emailjs.send(service_id,template_id,template_params)
      
 
-    console.log("Olá " + name)
-    console.log (message)
+     alert("All set! An email was sent to your Inbox.")
     
 }
